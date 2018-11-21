@@ -26,6 +26,12 @@
 
 /public/assets
 .byebug_history
+.rubocop.yml
+.rubocop_disabled.yml
+.rubocop_enabled.yml
+
+# Ignore Spring files.
+/spring/*.pid
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
