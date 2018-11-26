@@ -30,15 +30,36 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  users:
+    new:
+      title: "Sign up"
+      p: "This will be a signup page for new users."
   layouts:
     application:
       apptitle: "Ruby on Rails Tutorial Sample App"
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      ror_url: "http://www.railstutorial.org/"
+      ror: "Ruby on Rails Tutorial"
+      author_url: "http://www.michaelhartl.com/"
+      author: "Michael Hartl"
+      message_footer_html: "The %{href1} by %{href2}"
+      about: "About"
+      contact: "Contact"
+      news_ror_url: "http://news.railstutorial.org/"
+      news: "News"
   static_pages:
     home:
       title: "Home"
       railstutorial: "Ruby on Rails Tutorial"
       url_rails: "http://www.railstutorial.org/"
       message_home_html: "This is the home page for the %{href} sample application."
+      sign_up: "Sign up now!"
+      logo: "Rails logo"
+      kitten: "Kitten"
     help:
       title: "Help"
       rails_help: "Rails Tutorial help page"

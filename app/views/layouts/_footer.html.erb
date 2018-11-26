@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small>
+    <%= t("layouts.footer.message_footer_html", :href1 => link_to(t("layouts.footer.ror"), t("layouts.footer.ror_url")), :href2 => link_to(t("layouts.footer.author"), t("layouts.footer.author_url"))) %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("layouts.footer.about"), about_path %></li>
+      <li><%= link_to t("layouts.footer.contact"), contact_path %></li>
+      <li><%= link_to t("layouts.footer.news"), t("layouts.footer.news_ror_url") %></li>
+    </ul>
+  </nav>
+</footer>
