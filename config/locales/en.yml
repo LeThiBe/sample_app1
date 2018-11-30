@@ -30,10 +30,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  helpers:
+    label:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
+  shared:
+    form_error: "The form contains %{count_err}."
+    error:
+      one: "%{count} error"
+      other: "%{count} errors"
   users:
+    load_user:
+      error_message: "User not found !"
     new:
       title: "Sign up"
       p: "This will be a signup page for new users."
+      sign_up: "Create my account"
+      confirm: "Confirmation"
+    create:
+      sign_up_succ: "Welcome to the Sample App!"
   layouts:
     application:
       apptitle: "Ruby on Rails Tutorial Sample App"
