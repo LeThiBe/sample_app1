@@ -35,6 +35,7 @@ en:
       login: "Log in"
       login_html: "New user? %{href}"
       sign_up: "Sign up now!"
+      remember_box: "Remember me on this computer"
     create:
       message_success: "Login Successful"
       message_error: "Invalid email/password combination"
