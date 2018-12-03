@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t ".sign_up_succ"
       redirect_to @user
     else
@@ -15,8 +16,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   private
 

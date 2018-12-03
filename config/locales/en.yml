@@ -30,6 +30,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  sessions:
+    new:
+      login: "Log in"
+      login_html: "New user? %{href}"
+      sign_up: "Sign up now!"
+    create:
+      message_success: "Login Successful"
+      message_error: "Invalid email/password combination"
+    destroy:
+      message_logout: "Logout Successful"
   helpers:
     label:
       user:
@@ -59,6 +69,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      account: "Account"
     footer:
       ror_url: "http://www.railstutorial.org/"
       ror: "Ruby on Rails Tutorial"
