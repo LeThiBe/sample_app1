@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
     redirect_to login_path
   end
 
-  # Confirms the correct user.
   def correct_user
     redirect_to root_path unless current_user? @user
   end
