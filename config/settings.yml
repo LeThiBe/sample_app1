@@ -3,3 +3,5 @@ user:
   email_length: 50
   password_length: 6
   size: 80
+sessions:
+  value_remember: "1"
