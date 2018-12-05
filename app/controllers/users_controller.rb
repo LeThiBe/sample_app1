@@ -1,5 +1,12 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: :show
+  before_action :load_user, except: %i(index new create)
+  before_action :logged_in_user, except: %i(new create show)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.paginate page: params[:page], per_page: Settings.user.per_pag
+  end
 
   def new
     @user = User.new
@@ -17,6 +24,26 @@ class UsersController < ApplicationController
   end
 
   def show; end
+
+  def edit; end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t ".profile_update"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t ".message_success"
+    else
+      flash[:danger] = t ".message_error"
+    end
+    redirect_to users_path
+  end
 
   private
 
