@@ -30,6 +30,19 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      invalid_link: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      hi_html: "Hi %{href},"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      sample_app: "Sample App"
+      active: "Activate"
+  mailers:
+    user_mailer:
+      activation: "Account activation"
   logged_in_user:
     message_error: "Please log in."
   sessions:
@@ -41,6 +54,7 @@ en:
     create:
       message_success: "Login Successful"
       message_error: "Invalid email/password combination"
+      message_not_active: "Account not activated. Check your email for the activation link. "
     destroy:
       message_logout: "Logout Successful"
   helpers:
@@ -65,6 +79,7 @@ en:
       confirm: "Confirmation"
     create:
       sign_up_succ: "Welcome to the Sample App!"
+      check_email: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       update_profile: "Update your profile"
