@@ -10,6 +10,7 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user.password_length}, allow_nil: true
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   class << self
     def digest string

@@ -8,3 +8,12 @@ user:
   expire: 2
 sessions:
   value_remember: "1"
+micropost:
+  content_length: 140
+  size_image: 50
+  per_pag: 20
+  size_image_avatar: 50
+  type_image: "image/jpeg,image/gif,image/png"
+  picture_size: 5
+static_page:
+  per_pag: 20

@@ -30,6 +30,22 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  custom:
+    alert:
+      max_size: "Maximum file size is 5MB. Please choose a smaller file."
+  models:
+    micropost:
+      size_max: "should be less than 5MB"
+  microposts:
+    micropost:
+      time_post: "Posted %{time} ago."
+      delete: "delete"
+      sure: "You sure?"
+    create:
+      message_success: "Micropost created!"
+    destroy:
+      message_success: "Micropost deleted"
+      message_error: "Can't delete Micropost"
   password_resets:
     new:
       title: "Forgot password"
@@ -103,6 +119,16 @@ en:
     error:
       one: "%{count} error"
       other: "%{count} errors"
+    user_info:
+      profile: "view my profile"
+      micropost: "micropost"
+      count:
+        zero: "0 micropost"
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+    micropost_form:
+      compose: "Compose new micropost..."
+      submit: "Post"
   users:
     load_user:
       error_message: "User not found !"
@@ -129,6 +155,8 @@ en:
     destroy:
       message_success: "User deleted"
       message_error: "Can't user"
+    show:
+      count_micropost: "Microposts (%{count})"
   layouts:
     application:
       apptitle: "Ruby on Rails Tutorial Sample App"
@@ -160,6 +188,7 @@ en:
       sign_up: "Sign up now!"
       logo: "Rails logo"
       kitten: "Kitten"
+      feed: Micropost Feed
     help:
       title: "Help"
       rails_help: "Rails Tutorial help page"
