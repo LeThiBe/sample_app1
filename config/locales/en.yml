@@ -30,6 +30,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    create:
+      email_sent: "Email sent with password reset instructions"
+      message_error: "Email address not found"
+    edit:
+      title: "Reset password"
+      submit_update: "Update password"
+      confirm: "Confirmation"
+    check_expiration:
+      expired: "Password reset has expired."
+    update:
+      error_empty: "can't be empty"
+      message_success: "Password has been reset."
+    load_user:
+      error_message: "User not found !"
   account_activations:
     edit:
       activated: "Account activated!"
@@ -40,9 +58,19 @@ en:
       content: "Welcome to the Sample App! Click on the link below to activate your account:"
       sample_app: "Sample App"
       active: "Activate"
+    password_reset:
+      title: "Password reset"
+      click_to_reset: "To reset your password click the link below:"
+      reset: "Reset password"
+      expire: "This link will expire in two hours."
+      content: "If you did not request your password to be reset, please ignore this email and
+      your password will stay as it is."
   mailers:
     user_mailer:
-      activation: "Account activation"
+      account_activation:
+        activation: "Account activation"
+      password_reset:
+        reset: "Password reset"
   logged_in_user:
     message_error: "Please log in."
   sessions:
@@ -51,6 +79,7 @@ en:
       login_html: "New user? %{href}"
       sign_up: "Sign up now!"
       remember_box: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       message_success: "Login Successful"
       message_error: "Invalid email/password combination"
@@ -64,6 +93,11 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      session:
+        email: "Email"
+        password: "Password"
+      password_reset:
+        email: "Email"
   shared:
     form_error: "The form contains %{count_err}."
     error:
