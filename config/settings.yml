@@ -6,6 +6,7 @@ user:
   size_image: 50
   per_pag: 20
   expire: 2
+  gravatar: 30
 sessions:
   value_remember: "1"
 micropost:

@@ -30,6 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  relationship:
+    load_relationship:
+      error_message: Not found relationship
   custom:
     alert:
       max_size: "Maximum file size is 5MB. Please choose a smaller file."
@@ -115,6 +118,9 @@ en:
       password_reset:
         email: "Email"
   shared:
+    stats:
+      following: "following"
+      followers: "followers"
     form_error: "The form contains %{count_err}."
     error:
       one: "%{count} error"
@@ -130,6 +136,17 @@ en:
       compose: "Compose new micropost..."
       submit: "Post"
   users:
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      profile: "view my profile"
+      microposts: "Microposts:"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
     load_user:
       error_message: "User not found !"
     new:
