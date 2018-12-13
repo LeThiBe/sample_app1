@@ -43,12 +43,12 @@ Rails.application.configure do
   host = 'https://fast-plateau-92157.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
+    :address        => 'smtp.gmail.com',
     :port           => '587',
     :authentication => :plain,
-    :user_name      => ENV['15i1lethibe@gmail.com'],
-    :password       => ENV['bele8810101997],
-    :domain         => 'heroku.com',
+    :user_name      => '15i1lethibe@gmail.com',
+    :password       => 'bele8810101997',
+    :domain         => 'gmail.com',
     :enable_starttls_auto => true
   }
   # Store uploaded files on the local file system (see config/storage.yml for options)
